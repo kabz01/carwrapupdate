@@ -106,7 +106,9 @@ export default function PaintProtection() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Paint Protection Film</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-primary to-purple-600 dark:from-white dark:via-primary dark:to-purple-400 bg-clip-text text-transparent">
+            Paint Protection Film
+          </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Protect your vehicle's paint with our state-of-the-art PPF technology, offering unmatched protection against
             scratches, chips, and environmental damage.
@@ -114,22 +116,81 @@ export default function PaintProtection() {
         </motion.div>
       </section>
 
+      {/* Professional Installation Showcase */}
+      <section className="container mx-auto px-4 mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative rounded-3xl overflow-hidden shadow-2xl"
+        >
+          <div className="relative h-[500px] md:h-[600px] lg:h-[700px]">
+            <img
+              src="/images/services/ppf-bmw-installation.JPG"
+              alt="Professional PPF installation on luxury BMW"
+              className="w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 text-white">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+              >
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                  Professional Installation Excellence
+                </h2>
+                <p className="text-lg md:text-xl text-gray-200 mb-6 max-w-3xl">
+                  Our expert technicians use precision techniques and premium materials to ensure flawless protection
+                  for your vehicle. Every installation is performed with meticulous attention to detail.
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2">
+                    <p className="text-sm text-gray-300">Expert Installation</p>
+                    <p className="text-lg font-bold">Certified Technicians</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2">
+                    <p className="text-sm text-gray-300">Quality Guarantee</p>
+                    <p className="text-lg font-bold">Premium Materials</p>
+                  </div>
+                  <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-4 py-2">
+                    <p className="text-sm text-gray-300">Installation Time</p>
+                    <p className="text-lg font-bold">2-3 Days</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       {/* Benefits of PPF */}
-      <section className="py-16">
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Benefits of Paint Protection Film</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              Benefits of Paint Protection Film
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300">Industry-leading protection for your vehicle</p>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center"
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">☀️</span>
+              <div className="bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">☀️</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">UV Protection</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-center">UV Protection</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-center">
                 Maintain the condition of your vehicle's paint from harmful UV exposure, effectively reducing sunburn
                 and fading over time.
               </p>
@@ -138,13 +199,14 @@ export default function PaintProtection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-center"
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">✨</span>
+              <div className="bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">✨</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Enhanced Gloss</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-center">Enhanced Gloss</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-center">
                 Enhance the gloss finish of your vehicle, providing a deeper, more vibrant appearance that maintains its
                 brilliance.
               </p>
@@ -153,13 +215,14 @@ export default function PaintProtection() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-center"
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300"
             >
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">🔥</span>
+              <div className="bg-gradient-to-br from-primary/20 to-purple-600/20 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6">
+                <span className="text-4xl">🔥</span>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Temperature Resistance</h3>
-              <p className="text-gray-600 dark:text-gray-300">
+              <h3 className="text-2xl font-bold mb-4 text-center">Temperature Resistance</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-center">
                 Provide high-temperature resistance, ensuring your paint protection remains effective even in extreme
                 heat conditions.
               </p>
@@ -168,10 +231,105 @@ export default function PaintProtection() {
         </div>
       </section>
 
-      {/* PPF Products and Pricing */}
-      <section className="py-16 bg-gray-100 dark:bg-gray-900">
+      {/* PPF Types Showcase */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">PPF Products and Pricing</h2>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4">Our PPF Solutions</h2>
+            <p className="text-gray-600 dark:text-gray-300">Choose the perfect finish for your vehicle</p>
+          </motion.div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {ppfTypes.map((ppf, index) => (
+              <motion.div
+                key={ppf.name}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05, y: -10 }}
+                className="group"
+              >
+                <Card className="overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 hover:shadow-2xl h-full">
+                  <div className="relative h-64 overflow-hidden">
+                    <img
+                      src={ppf.image}
+                      alt={ppf.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <h3 className="text-2xl font-bold text-white mb-2">{ppf.name}</h3>
+                    </div>
+                  </div>
+                  <CardContent className="p-6">
+                    <p className="text-gray-600 dark:text-gray-300 text-center">{ppf.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Features Showcase */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
+              Advanced PPF Technology
+            </h2>
+            <p className="text-gray-600 dark:text-gray-300">See the difference our protection makes</p>
+          </motion.div>
+          <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {features.map((feature, index) => (
+              <motion.div
+                key={feature.title}
+                initial={{ opacity: 0, x: index === 0 ? -50 : 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                className="group"
+              >
+                <Card className="overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300 hover:shadow-2xl">
+                  <div className="relative h-80 overflow-hidden">
+                    <img
+                      src={feature.image}
+                      alt={feature.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  </div>
+                  <CardContent className="p-6 bg-white dark:bg-gray-800">
+                    <h3 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PPF Products and Pricing */}
+      <section className="py-16 bg-white dark:bg-gray-950">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold mb-4">PPF Products & Pricing</h2>
+            <p className="text-gray-600 dark:text-gray-300">Choose the protection level that fits your needs</p>
+          </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="pp1">
@@ -187,6 +345,7 @@ export default function PaintProtection() {
                       <li>Crystal clear finish that maintains paint visibility</li>
                       <li>UV resistant coating prevents yellowing and degradation</li>
                       <li>Easy maintenance and cleaning</li>
+                      <li><strong>8 years of durability</strong></li>
                     </ul>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
                       <strong>Warranty:</strong> 1 year coverage against peeling, cracking, and yellowing
@@ -208,6 +367,7 @@ export default function PaintProtection() {
                       <li>Enhanced UV protection with anti-yellowing technology</li>
                       <li>Improved adhesion for long-lasting application</li>
                       <li>Stain and chemical resistance</li>
+                      <li><strong>10 years of durability</strong></li>
                     </ul>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
                       <strong>Warranty:</strong> 1.5 year coverage against peeling, cracking, yellowing, and adhesion
@@ -231,6 +391,7 @@ export default function PaintProtection() {
                       <li>Advanced polymer construction for extreme durability</li>
                       <li>Hydrophobic surface for easy cleaning and maintenance</li>
                       <li>Temperature resistant from -40°F to 200°F</li>
+                      <li><strong>10 years of durability</strong></li>
                     </ul>
                     <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
                       <strong>Warranty:</strong> 2 year comprehensive coverage against all defects and performance

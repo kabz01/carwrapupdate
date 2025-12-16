@@ -10,8 +10,8 @@ const Footer = () => {
             <Link href="/" className="flex items-center justify-center">
               <div className="relative h-20 w-48 mb-2 transform transition-transform hover:scale-105">
                 <Image
-                  src="/images/m28_logo.png"
-                  alt="M28 Automotive Logo"
+                  src="/images/millan-customz-logo.png"
+                  alt="Millan Customz Logo"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 100vw, 192px"

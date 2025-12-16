@@ -40,7 +40,7 @@ const Header = () => {
                   isScrolled ? "h-14 w-40 md:h-16 md:w-48" : "h-16 w-48 md:h-20 md:w-56"
                 } transition-all duration-300`}
               >
-                <Image src="/images/m28_logo.png" alt="M28 Automotive Logo" fill className="object-contain" priority />
+                <Image src="/images/millan-customz-logo.png" alt="Millan Customz Logo" fill className="object-contain" priority />
               </motion.div>
             </Link>
           </motion.div>

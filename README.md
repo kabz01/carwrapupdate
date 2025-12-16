@@ -67,3 +67,8 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 
 For support, email your contact or visit your website.
 
+
+
+
+
+

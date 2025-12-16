@@ -166,11 +166,12 @@ export default function Home() {
                   <p className="text-gray-600 dark:text-gray-300 mb-4">{service.description}</p>
                   <Button
                     asChild
-                    variant="outline"
-                    className="w-full transform transition-all hover:scale-105 bg-transparent"
-                    onClick={() => trackButtonClick(`Learn More: ${service.title}`)}
+                    className="w-full transform transition-all hover:scale-105 bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white"
+                    onClick={() => trackButtonClick(`View ${service.title}`)}
                   >
-                    <Link href={service.link}>Learn More</Link>
+                    <Link href={service.link} className="flex items-center justify-center">
+                      View {service.title} <ChevronRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
                 </div>
               </motion.div>
