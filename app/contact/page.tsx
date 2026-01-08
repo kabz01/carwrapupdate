@@ -152,34 +152,24 @@ export default function Contact() {
                   ></iframe>
                 </div>
               </div>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">Lavington Greencycle</h3>
-                <p>Lavington, Nairobi, Kenya</p>
-                <div className="mt-4 h-64 w-full rounded-lg overflow-hidden">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8199!2d36.7659!3d-1.2737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f17!1s0x182f17!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </div>
+              <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 p-6 rounded-lg border border-purple-500/20">
+                <h3 className="text-xl font-semibold mb-2">🚗 Mobile Service Available</h3>
+                <p className="text-gray-300">
+                  We bring our services to you! Enjoy the convenience of professional car wrapping, paint protection and ceramic coating services at your home or office location. Contact us to schedule a mobile appointment.
+                </p>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Hours of Operation</h3>
                 <ul className="space-y-2">
-                  <li>Monday - Friday: 9AM - 9PM</li>
-                  <li>Saturday: 10AM - 6PM</li>
+                  <li>Monday - Saturday: 9AM - 6PM</li>
                   <li>Sunday: 10AM - 7PM</li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-semibold mb-2">Contact Information</h3>
                 <ul className="space-y-2">
-                  <li>Phone: +254790990850</li>
-                  <li>Email: richard28millan@gmail.com</li>
+                  <li>Phone: 0795557083</li>
+                  <li>Email: millanautocustoms@icloud.com</li>
                 </ul>
               </div>
             </CardContent>

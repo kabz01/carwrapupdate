@@ -37,7 +37,7 @@ const Header = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
                 className={`relative ${
-                  isScrolled ? "h-14 w-40 md:h-16 md:w-48" : "h-16 w-48 md:h-20 md:w-56"
+                  isScrolled ? "h-20 w-56 md:h-24 md:w-72" : "h-24 w-72 md:h-28 md:w-80"
                 } transition-all duration-300`}
               >
                 <Image src="/images/millan-customz-logo.png" alt="Millan Customz Logo" fill className="object-contain" priority />

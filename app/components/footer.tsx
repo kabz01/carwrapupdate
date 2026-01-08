@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <Link href="/" className="flex items-center justify-center">
-              <div className="relative h-20 w-48 mb-2 transform transition-transform hover:scale-105">
+              <div className="relative h-28 w-72 mb-2 transform transition-transform hover:scale-105">
                 <Image
                   src="/images/millan-customz-logo.png"
                   alt="Millan Customz Logo"

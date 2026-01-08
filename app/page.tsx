@@ -10,9 +10,9 @@ import { useInView } from "react-intersection-observer"
 import { trackButtonClick } from "@/lib/supabase"
 
 const testimonials = [
-  { name: "John D.", text: "WrapMaster transformed my car! The quality is outstanding." },
+  { name: "John D.", text: "Millan Customz transformed my car! The quality is outstanding." },
   { name: "Sarah M.", text: "I love how my car looks now. Professional service and amazing results!" },
-  { name: "Mike T.", text: "The team at WrapMaster are true artists. Highly recommended!" },
+  { name: "Mike T.", text: "The team at Millan Customz are true artists. Highly recommended!" },
 ]
 
 const services = [
@@ -81,7 +81,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-6xl md:text-7xl font-bold">WrapMaster</h1>
+            <h1 className="text-6xl md:text-7xl font-bold">Millan Customz</h1>
           </motion.div>
           <motion.h3
             className="text-2xl md:text-3xl font-bold mb-4"
@@ -204,7 +204,7 @@ export default function Home() {
       <section className="py-16 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 dark:text-white">Ready to Transform Your Vehicle?</h2>
-          <p className="text-xl mb-8 dark:text-gray-300">Experience the WrapMaster difference today!</p>
+          <p className="text-xl mb-8 dark:text-gray-300">Experience the Millan Customz difference today!</p>
           <div className="relative" ref={servicesRef}>
             <Button
               size="lg"
